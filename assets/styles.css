@@ -388,3 +388,12 @@ dl.stat-band{margin:0}
 .hrd-box img.hrd-badge{width:150px}
 .training-card.o::before{background:var(--orange)} .training-card.p::before{background:var(--pink)} .training-card.u::before{background:var(--purple)} .training-card.b::before{background:var(--sky)}
 .cta-band h2{max-width:26ch}
+
+/* Training video highlights (TikTok embeds) */
+.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.video-item{margin:0;display:grid;gap:10px}
+.video-item .tiktok-embed{margin:0 !important;min-width:0 !important;max-width:100% !important}
+.video-item figcaption{color:var(--muted);font-size:15px;font-weight:500;text-align:center}
+.video-more{margin-top:28px;text-align:center}
+@media (max-width:1000px){.video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.video-grid{grid-template-columns:1fr;max-width:360px;margin:0 auto}}
